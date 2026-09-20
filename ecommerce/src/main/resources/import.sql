@@ -21,7 +21,7 @@ insert into cliente (nome, email, telefone) values ('Sara', 'FitFit@email.com', 
 
 
 
-insert into pedido (data, status, valor_Total, cliente_id) values ('2077-23-10', 'Enviado',  190.00, 1);
-insert into pedido (data, status, valor_Total, cliente_id) values ('2077-23-10', 'Enviado', 500.00, 2);
+insert into pedido (data, status, valor_Total, cliente_id) values ('2077-10-23', 'Enviado',  190.00, 1);
+insert into pedido (data, status, valor_Total, cliente_id) values ('2077-10-23', 'Enviado', 500.00, 2);
 
 insert into item_pedido (quantidade, valor_unitario, pedido_id, produto_id) values (15, 190.00, 1, 1);
