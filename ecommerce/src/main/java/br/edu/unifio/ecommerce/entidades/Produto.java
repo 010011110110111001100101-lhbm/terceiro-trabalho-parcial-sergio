@@ -2,8 +2,6 @@ package br.edu.unifio.ecommerce.entidades;
 
 import java.math.BigDecimal;
 
-import org.hibernate.annotations.ManyToAny;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -15,22 +13,22 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
+public class Produto {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
-public class produto {
-@Id
-@GeneratedValue (strategy = GenerationType.IDENTITY)
-private Integer id;
+    private String nome;
 
-private String nome;
+    private String descricao;
 
-private String descricao;
+    private Short estoque;
 
+    private BigDecimal preco;
 
-private Short estoque;
+    @ManyToOne
+    private Categoria categoria;
 
-private BigDecimal preco;
-@ManyToOne
-private Categoria categoria;
-
+    
 
 }
