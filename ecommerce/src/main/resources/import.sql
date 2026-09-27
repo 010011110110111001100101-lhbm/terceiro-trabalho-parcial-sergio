@@ -35,7 +35,7 @@ insert into item_pedido (quantidade, valor_unitario, pedido_id, produto_id) valu
 insert into item_pedido (quantidade, valor_unitario, pedido_id, produto_id) values (1, 79.00, 4, 4);
 insert into item_pedido (quantidade, valor_unitario, pedido_id, produto_id) values (1, 799.00, 5, 5);
 
-insert into pagamento (valor, data, status, tipo, pedido_id) values (190.00, '2077-10-23 10:00:00', 'Pendente', 'Cartão de Crédito', 1);
+insert into pagamento (valor, data, status, tipo, pedido_id) values (190.00, '2077-10-23 10:00:00', 'Pago', 'Cartão de Crédito', 1);
 insert into pagamento (valor, data, status, tipo, pedido_id) values (500.90, '2077-10-23 14:30:00', 'Pago', 'Boleto', 2);
 insert into pagamento (valor, data, status, tipo, pedido_id) values (479.00, '2077-10-23 09:15:00', 'Pago', 'Pix', 3);
 insert into pagamento (valor, data, status, tipo, pedido_id) values (79.00, '2077-10-23 17:00:00', 'Pendente', 'Cartão de Débito', 4);
